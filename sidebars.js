@@ -24,7 +24,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'User Guide',
-      items: ['User-Guide/HowToUse'],
+      items: ['User-Guide/HowToUse', 'User-Guide/AddStakeForEarn'],
     },
   ],
 
