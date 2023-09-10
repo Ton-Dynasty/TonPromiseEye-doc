@@ -82,6 +82,8 @@ Users can create a wallet by using Tonkeeper or other wallet software. And then,
 
 ### 3. Subscribe a signal
 
+After deploying a UserCallBack contract, users can subscribe a signal by using our [website](https://tonpromiseeye.com/).
+
 1. Users can choose a signal source.
 
    ![Choose signal source](/img/logo.svg)
