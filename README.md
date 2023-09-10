@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
@@ -39,3 +40,6 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+=======
+# TonPromiseEye-doc
+>>>>>>> b434d6863f7e1bf47b5c67ff3c1640545878a1c9
