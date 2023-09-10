@@ -7,8 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'TonPromiseEye',
-  tagline: 'Here is TonPromiseEye!!',
-  favicon: 'img/favicon.ico',
+  tagline: 'Welcome to TonPromiseEye',
+  favicon: 'img/Dynasty-logo.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
@@ -62,12 +62,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/Dynasty-logo.png',
       navbar: {
         title: 'TonPromiseEye',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/Dynasty-logo.png',
         },
         items: [
           {
