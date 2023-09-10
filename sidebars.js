@@ -20,10 +20,11 @@ const sidebars = {
 
   tutorialSidebar: [
     'Overview',
+    'WhatAreOurFeatures',
     {
       type: 'category',
       label: 'User Guide',
-      items: ['User-Guide/HowToSubscribe'],
+      items: ['User-Guide/HowToUse'],
     },
   ],
 
