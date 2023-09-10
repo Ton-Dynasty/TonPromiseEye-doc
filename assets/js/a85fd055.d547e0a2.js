@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkton_promise_eye_doc=self.webpackChunkton_promise_eye_doc||[]).push([[559],{8816:e=>{e.exports=JSON.parse('{"permalink":"/TonPromiseEye-doc/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
