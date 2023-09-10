@@ -96,6 +96,15 @@ const config = {
             ],
           },
           {
+            title: 'Community',
+            items: [
+              {
+                label: 'Telegram',
+                href: 'https://t.me/+5affnJVZV4I4MTI1',
+              },
+            ],
+          },
+          {
             title: 'More',
             items: [
               {
