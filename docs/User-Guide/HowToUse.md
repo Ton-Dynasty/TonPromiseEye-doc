@@ -64,11 +64,21 @@ After creating a UserCallBack contract, users can subscribe a signal by using ou
 
 ## **For advanced usage**
 
+> **Advanced usage is for who want to use our protocol in their own smart contract.**
+
 ### 1. Create a wallet
 
 Users can create a wallet by using Tonkeeper or other wallet software. And then, users should deposit some TONs into the wallet.
 
 ### 2. Write your own UserCallBack contract
+
+1. Users should write their own UserCallBack contract.
+
+   ![Write UserCallBack](/img/logo.svg)
+
+2. Users should deploy their UserCallBack contract.
+
+   ![Deploy UserCallBack](/img/logo.svg)
 
 ### 3. Subscribe a signal
 
