@@ -19,6 +19,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build website
+        env:
+          NODE_ENV: production
         run: yarn build
 
       # Popular action to deploy to GitHub Pages:

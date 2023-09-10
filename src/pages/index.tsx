@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/Overview">
-            TonPromiseEye Tutorial ⏱️
+            TonPromiseEye Tutorial ⏱
           </Link>
         </div>
       </div>

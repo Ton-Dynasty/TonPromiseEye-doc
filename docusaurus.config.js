@@ -8,18 +8,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'TonPromiseEye',
   tagline: 'Welcome to TonPromiseEye',
-  favicon: 'img/Dynasty-logo.png',
+  favicon: 'https://avatars.githubusercontent.com/u/144251015?s=400&u=34dba0b87d503a3307cb47a45ac378bee36a22f2&v=4',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://ton-dynasty.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: process.env.NODE_ENV === 'production' ? '/TonPromiseEye-doc/' : '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Ton-Dynasty', // Usually your GitHub org/user name.
-  projectName: 'TonPromiseEye', // Usually your repo name.
+  projectName: 'ton-dynasty.github.io',
+  organizationName: 'Ton-Dynasty',
+  trailingSlash: false,
+
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -62,12 +64,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/Dynasty-logo.png',
+      image: 'https://avatars.githubusercontent.com/u/144251015?s=400&u=34dba0b87d503a3307cb47a45ac378bee36a22f2&v=4',
       navbar: {
         title: 'TonPromiseEye',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/Dynasty-logo.png',
+          alt: 'TonPromiseEye',
+          src: 'https://avatars.githubusercontent.com/u/144251015?s=400&u=34dba0b87d503a3307cb47a45ac378bee36a22f2&v=4',
         },
         items: [
           {
