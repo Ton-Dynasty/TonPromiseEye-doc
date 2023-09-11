@@ -22,12 +22,19 @@ Why do we need the role of a staker? This is because in our architecture, each s
 
 To add stake, the following details are required:
 
-- `context.value`: The amount of TONs to be staked.
-- `beneficiary`: The wallet address of the staker.
+```
+message AddStakeFor {
+    beneficiary: Address; // Beneficiary address
+}
+```
 
 ### Withdraw stake
 
 To withdraw stake, the following details are required:
 
-- `receiver`: The wallet address of the receiver.
-- `amount`: The amount of TONs to be withdrawn.
+```
+message RemoveStake {
+    receiver: Address; // Receiver address
+    amount: Int as coins; // Amount of stake to be removed
+}
+```
