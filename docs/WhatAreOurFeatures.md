@@ -2,34 +2,33 @@
 sidebar_position: 2
 ---
 
-# What are our features?
+# What Are Our Features?
 
-## What is our goal?
+## What Is Our Goal?
 
-我們的目標是讓使用者可以透過 eventon 來訂閱任意事件的訊號，並且在事件發生時自動執行使用者自訂的操作。
-所謂的訊號可以是鏈上的合約事件( Example: De-Fi protocol、Oracle 或是其他智能合約 )，也可以是鏈下的事件( 智能合約漏洞檢測 )。
+Our goal is to enable users to subscribe to signals for any event through Eventon and automatically execute user-defined actions when these events occur. Signals can be on-chain contract events (e.g., De-Fi protocols, Oracles, or other smart contracts) or off-chain events (e.g., smart contract vulnerability detection).
 
-### Use cases
+### Use Cases
 
-1. 使用者可以訂閱一個 Address，並且設定當 Address 發出交易操作的訊號時，eventon 會自動幫使用者執行跟單、反手等等。
+1. Users can subscribe to an address and configure Eventon to automatically perform actions such as following or reversing trades when the address emits transaction signals.
 
-2. 使用者可以訂閱一個 De-Fi protocol，並且設定當 De-Fi protocol 發出特定訊號時，eventon 會自動幫使用者領取 APY。
+2. Users can subscribe to a De-Fi protocol and set Eventon to automatically claim APY rewards when specific signals are emitted by the De-Fi protocol.
 
-3. 使用者可以訂閱一個 Oracle，並且設定當 Oracle 發出 ETH 的價格為 1600USD 時，eventon 會自動幫使用買入 ETH、賣出 ETH 等等。
+3. Users can subscribe to an Oracle and configure Eventon to automatically execute actions like buying or selling ETH when the Oracle emits an ETH price of $1600 USD.
 
-4. 使用者可以訂閱一個智能合約，並且設定當智能合約發出特定訊號 ( Example: 發放空投、發放 NFT 等等 ) 時，eventon 會自動幫使用者領取空投、領取 NFT 等等。
+4. Users can subscribe to a smart contract and set Eventon to automatically claim airdrops or NFTs when specific signals are emitted by the smart contract (e.g., airdrop distributions or NFT releases).
 
-5. 使用者可以訂閱一個鏈下的外部訊號，當外部訊號送到 eventon 時，eventon 會自動幫使用者執行自訂的操作 ( Example: 標示警示地址、配置投資組合等等 )。
+5. Users can subscribe to off-chain external signals, and when these signals are sent to Eventon, it can automatically execute user-defined actions (e.g., marking warning addresses or configuring investment portfolios).
 
-## What are our advantages?
+## What Are Our Advantages?
 
-1. eventon 是一個開源的協議，任何人都可以透過 eventon 來訂閱任意事件的訊號，並且在事件發生時自動執行自訂的操作。
+1. Eventon is an open-source protocol that allows anyone to subscribe to signals for any event and execute custom actions when events occur.
 
-2. eventon 是一個去中心化的協議，所有的操作都是透過智能合約執行，不需要任何中心化的服務。
+2. Eventon is a decentralized protocol, and all operations are executed through smart contracts, eliminating the need for centralized services.
 
-3. eventon 的使用簡單易懂，即使是沒有任何程式設計經驗的使用者也可以輕鬆上手。
+3. Eventon is user-friendly and easy to understand, even for users with no programming experience.
 
-4. eventon 的支援度非常高，不管是任何鏈上的合約事件，或是鏈下的事件，只要**在原有的程式碼上新增一個發送訊息的函數，並提供給我們訊號的 ABI**，就可以讓 eventon 支援，**無須更改任何架構**。
+4. Eventon has broad support, accommodating both on-chain contract events and off-chain events. All that's required to integrate an event into Eventon is adding a message-sending function to the existing code and providing the signal's ABI, with no need to alter the existing architecture.
 
 ## Our Architecture
 
