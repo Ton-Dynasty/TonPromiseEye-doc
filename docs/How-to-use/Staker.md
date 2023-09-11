@@ -22,6 +22,9 @@ Why do we need the role of a staker? This is because in our architecture, each s
 
 To add stake, the following details are required:
 
+- `beneficiary`: The address of the stake beneficiary
+- `contxt.value`: The amount of stake to be added
+
 ```
 message AddStakeFor {
     beneficiary: Address; // Beneficiary address
@@ -31,6 +34,9 @@ message AddStakeFor {
 ### Withdraw stake
 
 To withdraw stake, the following details are required:
+
+- `receiver`: The address of the stake receiver
+- `amount`: The amount of stake to be removed
 
 ```
 message RemoveStake {
