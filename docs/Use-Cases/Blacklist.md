@@ -8,7 +8,13 @@ One such use case of this innovative system is the Blacklist functionality. This
 
 ![Blacklist workflow](./img/blacklist.png)
 
-## Detail
+### Steps
+
+1. `Security organization` send signal(black address) to `Eventon`.
+2. `Eventon` pass this signal(black address) to `Wallet`.
+3. `Wallet` collect the incoming black addresses and prevent from interacting with them.
+
+## Details
 
 ### Event Signal
 
