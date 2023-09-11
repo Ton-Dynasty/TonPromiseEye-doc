@@ -23,11 +23,16 @@ Why do we need the role of a staker? This is because in our architecture, each s
 To add stake, the following details are required:
 
 - `beneficiary`: The address of the stake beneficiary
-- `contxt.value`: The amount of stake to be added
+- `value`: The amount of stake to be added
 
-```
-message AddStakeFor {
-    beneficiary: Address; // Beneficiary address
+```typescript
+send(SendParameters{to: childRouterAddress,
+    value: value,
+    mode: SendRemainingValue,
+    bounce: false,
+    body: AddStakeFor{
+        beneficiary: Address; // Beneficiary address
+    }.toCell(),
 }
 ```
 
@@ -38,9 +43,14 @@ To withdraw stake, the following details are required:
 - `receiver`: The address of the stake receiver
 - `amount`: The amount of stake to be removed
 
-```
-message RemoveStake {
-    receiver: Address; // Receiver address
-    amount: Int as coins; // Amount of stake to be removed
+```typescript
+send(SendParameters{to: childRouterAddress,
+    value: 0,
+    mode: SendRemainingValue,
+    bounce: false,
+    body: RemoveStake{
+        receiver: Address; // Receiver address
+        amount: uint128; // Amount to be removed
+    }.toCell(),
 }
 ```
