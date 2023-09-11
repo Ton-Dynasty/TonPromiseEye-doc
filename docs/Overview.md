@@ -22,7 +22,7 @@ Ton-Dynasty 設計了一個 protocol 來讓使用者訂閱鏈上合約所發生�
 
 TonPromiseEye 的工作流程如下圖所示：
 
-<!-- ![TonPromiseEye Workflow](/img/tonpromiseeye-workflow.png) -->
+![TonPromiseEye Workflow](/img/tonpromiseeye-workflow.svg)
 
 ## Meet Our Community
 
