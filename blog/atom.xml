@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ton-dynasty.github.io/eventon-doc/blog"/>
     <subtitle>eventon Blog</subtitle>
-    <icon>https://ton-dynasty.github.io/eventon-doc/https://avatars.githubusercontent.com/u/144251015?s=400&amp;u=34dba0b87d503a3307cb47a45ac378bee36a22f2&amp;v=4</icon>
+    <icon>https://ton-dynasty.github.io/eventon-doc/https://github.com/Ton-Dynasty/eventon-doc/blob/main/static/img/eventon.png?raw=true</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://ton-dynasty.github.io/eventon-doc/blog/welcome</id>
