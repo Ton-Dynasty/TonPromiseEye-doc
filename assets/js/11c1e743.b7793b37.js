@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkton_promise_eye_doc=self.webpackChunkton_promise_eye_doc||[]).push([[370],{341:e=>{e.exports=JSON.parse('{"label":"hello","permalink":"/eventon-doc/blog/tags/hello","allTagsPath":"/eventon-doc/blog/tags","count":2}')}}]);

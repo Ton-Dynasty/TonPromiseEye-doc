@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkton_promise_eye_doc=self.webpackChunkton_promise_eye_doc||[]).push([[7758],[e=>{e.exports=JSON.parse('{"label":"docusaurus","permalink":"/eventon-doc/blog/tags/docusaurus","allTagsPath":"/eventon-doc/blog/tags","count":4}')}]]);
