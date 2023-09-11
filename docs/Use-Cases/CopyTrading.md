@@ -19,6 +19,22 @@
 
 ## Details
 
+### Event Signal
+
+The system employs a logic for detecting signal events initiated by signal providers. When a signal provider initiates a trade, the system captures the following information:
+
+- Trade Type: Indicates whether it's a buy or sell order.
+- Asset: Specifies the asset or instrument being traded.
+- Position Size: The margin used for opening the position.
+
+### Subscriber Signal Replication
+
+Subscribers can choose to replicate received signals with their own trading accounts. The system facilitates this process by allowing subscribers to set their preferred parameters:
+
+- Signal Delay: Subscribers can introduce a delay in signal replication to accommodate their trading strategies.
+- Risk Management: Subscribers can define their risk tolerance levels and position sizes based on the received signals.
+- Auto-Execution: For subscribers opting for automated trading, the system can execute trades directly on their behalf based on the received signals.
+
 ## Conclusion
 
 - Eventon's copy trading provides an effective way for traders and investors to share and benefit from trading strategies.

@@ -1,4 +1,4 @@
-# VulnerableContractAlert
+# Vulnerable Contract Alert
 
 ## Introduction
 
@@ -16,6 +16,20 @@
 3. Alert Generation: When a potential vulnerability is detected, the system generates an alert. The alert includes details about the contract, the detected vulnerability, and its potential impact.
 
 4. Alert Distribution: Alerts are distributed to relevant stakeholders, including contract owners, blockchain developers, and security experts. Timely notifications enable them to take necessary actions to address the vulnerability.
+
+## Details
+
+### Vulnerability Types
+
+The system is equipped to detect various types of vulnerabilities, primarily relying on the inspection tools provided by the signal provider. These tools can identify vulnerabilities in categories including but not limited to:
+
+1. Reentrancy Vulnerabilities: These vulnerabilities occur when an external contract can call back into the vulnerable contract before the first call completes, potentially allowing malicious actors to manipulate the contract's state.
+2. Unchecked External Calls: Identifying situations where external calls to other contracts lack proper validation and checks, potentially leading to unauthorized access or funds loss.
+3. Time Manipulation Attacks: These vulnerabilities involve manipulating time-related functions in smart contracts, which can affect the outcome of contract executions and potentially lead to exploitation.
+
+### Remediation Recommendations
+
+The system not only identifies vulnerabilities but also offers recommendations for remediation. This guidance helps stakeholders take appropriate actions to secure their smart contracts or wallets.
 
 ## Conclusion
 
