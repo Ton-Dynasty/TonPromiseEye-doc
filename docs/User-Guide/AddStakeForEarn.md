@@ -10,7 +10,7 @@ sidebar_position: 4
 
 ## How much can I earn
 
-eventon Protocol 會將所有的收益分配給所有的 stake，而每個 stake 的收益會依照 stake 的數量比例分配，舉例來說，如果使用者 stake 了 10% 的 stake，那麼使用者就可以獲得 10% 的收益。
+eventon Protocol 會將所有的收益分配給所有的 stake，而每個 stake 的收益會依照 stake 的數量比例分配，舉例來說，如果使用者佔有總 stake 的 10% ，那麼使用者就可以獲得 10% 的收益。
 
 ## Workflow
 
