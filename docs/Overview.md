@@ -40,7 +40,7 @@ Let's discover **eventon in 5 minutes**.
 
 eventon 的工作流程如下圖所示：
 
-![eventon Workflow](/img/eventon-workflow.svg)
+![eventon Workflow](/img/eventon-workflow.png)
 
 ## Meet Our Community
 
