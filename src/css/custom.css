@@ -5,26 +5,26 @@
  */
 
 /* You can override the default Infima variables here. */
+/* 預設主題 */
 :root {
-  --ifm-color-primary: #8e96f5;
-  --ifm-color-primary-dark: #8e96f5;
-  --ifm-color-primary-darker: #8e96f5;
-  --ifm-color-primary-darkest: #8e96f5;
-  --ifm-color-primary-light: #8e96f5;
-  --ifm-color-primary-lighter: #8e96f5;
-  --ifm-color-primary-lightest: #8e96f5;
-  --ifm-code-font-size: 95%;
+  --ifm-color-primary: #0074d9; /* 主要藍色 */
+  --ifm-color-primary-dark: #0056b3; /* 深色藍色 */
+  --ifm-color-primary-darker: #003d70; /* 更深色藍色 */
+  --ifm-color-primary-darkest: #00274c; /* 最深色藍色 */
+  --ifm-color-primary-light: #3ea2f5; /* 較淺色藍色 */
+  --ifm-color-primary-lighter: #66a5db; /* 更淺色藍色 */
+  --ifm-color-primary-lightest: #99c2f2; /* 最淺色藍色 */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* 深色主題 */
 [data-theme='dark'] {
-  --ifm-color-primary: #4c59eb;
-  --ifm-color-primary-dark: #4c59eb;
-  --ifm-color-primary-darker: #4c59eb;
-  --ifm-color-primary-darkest: #4c59eb;
-  --ifm-color-primary-light: #4c59eb;
-  --ifm-color-primary-lighter: #4c59eb;
-  --ifm-color-primary-lightest: #4c59eb;
+  --ifm-color-primary: #0099cc; /* 主要藍色 */
+  --ifm-color-primary-dark: #007aa6; /* 深色藍色 */
+  --ifm-color-primary-darker: #00597d; /* 更深色藍色 */
+  --ifm-color-primary-darkest: #003f56; /* 最深色藍色 */
+  --ifm-color-primary-light: #35b3e8; /* 較淺色藍色 */
+  --ifm-color-primary-lighter: #5ec0f0; /* 更淺色藍色 */
+  --ifm-color-primary-lightest: #88cef7; /* 最淺色藍色 */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
