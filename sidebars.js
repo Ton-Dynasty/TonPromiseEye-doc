@@ -26,6 +26,11 @@ const sidebars = {
       label: 'User Guide',
       items: ['User-Guide/HowToUse', 'User-Guide/AddStakeForEarn'],
     },
+    {
+      type: 'category',
+      label: 'Use Cases',
+      items: ['Use-Cases/CopyTrading'],
+    }
   ],
 
 };
