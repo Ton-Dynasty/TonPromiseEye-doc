@@ -12,9 +12,9 @@ Drawing from the above explanation, we can categorize it into two main types:
 
 - **Off-chain Protocol**: These protocols cater to data from off-chain sources, such as oracles. The computations and interactions for these data points occur off-chain, leading us to define them as Off-chain Protocols.
 
-## Prepare: Just implement the trait `Alertable`
+## Prepare: Just `Alertable`
 
-To send signal, you need to prepare a contract with our template interface.
+To send signal, you need to prepare a contract with our template interface `Alertable`.
 
 ```typescript
 trait Alertable with Ownable {
