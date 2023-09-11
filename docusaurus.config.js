@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'TonPromiseEye',
-  tagline: 'Welcome to TonPromiseEye',
+  title: 'eventon',
+  tagline: 'Welcome to eventon',
   favicon: 'https://avatars.githubusercontent.com/u/144251015?s=400&u=34dba0b87d503a3307cb47a45ac378bee36a22f2&v=4',
 
   // Set the production url of your site here
   url: 'https://ton-dynasty.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: process.env.NODE_ENV === 'production' ? '/TonPromiseEye-doc/' : '/',
+  baseUrl: process.env.NODE_ENV === 'production' ? '/eventon-doc/' : '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -44,7 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Ton-Dynasty/TonPromiseEye-doc/tree/main/',
+            'https://github.com/Ton-Dynasty/eventon-doc/tree/main/',
         },
         blog: {
           showReadingTime: false,
@@ -64,12 +64,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'https://avatars.githubusercontent.com/u/144251015?s=400&u=34dba0b87d503a3307cb47a45ac378bee36a22f2&v=4',
+      image: 'https://github.com/Ton-Dynasty/eventon-doc/blob/main/static/img/eventon.png?raw=true',
       navbar: {
-        title: 'TonPromiseEye',
+        title: 'eventon',
         logo: {
-          alt: 'TonPromiseEye',
-          src: 'https://avatars.githubusercontent.com/u/144251015?s=400&u=34dba0b87d503a3307cb47a45ac378bee36a22f2&v=4',
+          alt: 'eventon',
+          src: 'https://github.com/Ton-Dynasty/eventon-doc/blob/main/static/img/eventon.png?raw=true',
         },
         items: [
           {

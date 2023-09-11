@@ -12,7 +12,7 @@ Users can create a wallet by using Tonkeeper or other wallet software. And then,
 
 ### 2. Create a UserCallBack contract
 
-Users can create a UserCallBack contract by using our [website](https://tonpromiseeye.com/).
+Users can create a UserCallBack contract by using our [website](https://eventon.com/).
 
 1. Users should connect their wallet to our website.
 
@@ -40,7 +40,7 @@ Users can create a UserCallBack contract by using our [website](https://tonpromi
 
 ### 3. Subscribe a signal
 
-After creating a UserCallBack contract, users can subscribe a signal by using our [website](https://tonpromiseeye.com/).
+After creating a UserCallBack contract, users can subscribe a signal by using our [website](https://eventon.com/).
 
 1. Users can choose a signal source.
 
@@ -82,7 +82,7 @@ Users can create a wallet by using Tonkeeper or other wallet software. And then,
 
 ### 3. Subscribe a signal
 
-After deploying a UserCallBack contract, users can subscribe a signal by using our [website](https://tonpromiseeye.com/).
+After deploying a UserCallBack contract, users can subscribe a signal by using our [website](https://eventon.com/).
 
 1. Users can choose a signal source.
 
