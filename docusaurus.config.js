@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'eventon',
   tagline: 'Welcome to eventon',
-  favicon: 'https://avatars.githubusercontent.com/u/144251015?s=400&u=34dba0b87d503a3307cb47a45ac378bee36a22f2&v=4',
+  favicon: 'https://github.com/Ton-Dynasty/eventon-doc/blob/main/static/img/eventon.png?raw=true',
 
   // Set the production url of your site here
   url: 'https://ton-dynasty.github.io',
