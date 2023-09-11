@@ -13,7 +13,7 @@
 
 - Trader receive price event signal:
 
-```
+```typescript
 receive(msg: EventSignal) {
         let cxt: Context = context();
         if(cxt.sender != self.messenger) {
@@ -32,7 +32,7 @@ receive(msg: EventSignal) {
 
 - Trader send their trading message to followers
 
-```
+```typescript
 send(SendParameters{
     to: self.dex,
     value: value,
@@ -52,7 +52,7 @@ send(SendParameters{
 
 - Subscriber receives trading message from subscriber
 
-```
+```typescript
 message Trade {
     orderAction: Int;
     assets: self.assets

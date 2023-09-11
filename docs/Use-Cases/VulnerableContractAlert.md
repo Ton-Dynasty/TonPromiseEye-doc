@@ -17,6 +17,15 @@
 
 4. Alert Distribution: Alerts are distributed to relevant stakeholders, including contract owners, blockchain developers, and security experts. Timely notifications enable them to take necessary actions to address the vulnerability.
 
+- the alert message send to subscribers
+
+```typescript
+message BugWarning {
+    targetAdress: Address; // The smart contract address that has a bug
+    bugInfo: Cell; // The bug information
+}
+```
+
 ## Details
 
 ### Vulnerability Types
