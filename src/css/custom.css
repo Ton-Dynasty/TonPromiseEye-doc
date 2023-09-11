@@ -17,6 +17,10 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
+.footer {
+  text-align: center;
+}
+
 /* 深色主題 */
 [data-theme='dark'] {
   --ifm-color-primary: #0086d2; /* 主要藍色 */
