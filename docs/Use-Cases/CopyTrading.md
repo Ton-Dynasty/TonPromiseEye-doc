@@ -2,23 +2,23 @@
 
 ## Introduction
 
-- Eventon 鏈上跟單交易訂閱系統，旨在連接有經驗的交易員（信號提供者）和投資者（訂閱者）。
-- 系統的核心概念:訂閱者可以複製信號提供者的交易策略，從而受益於他們的專業知識和成功的交易決策。
+- Eventon's online copy trading subscription system aims to connect experienced traders (signal providers) with investors (subscribers).
+- The core concept of the system: Subscribers can replicate the trading strategies of signal providers, thereby benefiting from their expertise and successful trading decisions.
 
 ## Workflow
 
 ![CopyTrading Workflow](./img/copytrading.png)
 
-1. 交易員訂閱 Oracle 事件： 交易員首先選擇訂閱一個或多個 Oracle 事件，這些事件提供實時的市場價格和資訊。Oracle 定期向交易員的智能合約傳送這些價格信號。
+1. Trader Subscribes to Oracle Events: Traders initially choose to subscribe to one or more Oracle events that provide real-time market prices and information. The Oracle regularly sends these price signals to the trader's smart contract.
 
-2. 信號提供者註冊： 有意成為信號提供者的交易員可以向 Eventon 註冊。他們需要提供相關的詳細信息並同意遵守 Eventon 制定的條款和條件。
+2. Signal Provider Registration: Traders interested in becoming signal providers can register with Eventon. They need to provide relevant details and agree to adhere to Eventon's terms and conditions.
 
-3. 訂閱者訂閱信號： 投資者可以在 Eventon 平台上瀏覽不同的信號提供者，查看其過去的表現和交易策略。一旦選擇了一位信號提供者，訂閱者可以輕鬆地訂閱他們的交易信號。
+3. Subscriber Subscribes to Signals: Investors can browse different signal providers on the Eventon platform, reviewing their past performance and trading strategies. Once they select a signal provider, subscribers can easily subscribe to their trading signals.
 
-4. 交易執行： 當信號提供者執行買入或賣出交易時，交易的詳細信息被傳送到 Eventon 系統。Eventon 驗證這些交易，然後將相關信息發送給訂閱了該信號提供者的所有訂閱者。這使得訂閱者能夠以實時方式複製信號提供者的交易。
+4. Trade Execution: When a signal provider executes buy or sell trades, the detailed information is transmitted to the Eventon system. Eventon verifies these trades and then sends the relevant information to all subscribers who have subscribed to that signal provider. This allows subscribers to replicate the signal provider's trades in real-time.
 
 ## Conclusion
 
-- Eventon 複製交易為交易員和投資者提供了一個有效的方式來分享和受益於交易策略。
-- 這個系統通過提供實時市場數據和信號，以及透明的交易歷史，有助於建立更加公平和透明的金融生態系統。
-- 複製交易的成功取決於有效的風險管理和智能的投資決策，這有助於所有參與者實現他們的財務目標。
+- Eventon's copy trading provides an effective way for traders and investors to share and benefit from trading strategies.
+- This system, by offering real-time market data and signals, along with transparent trading histories, contributes to creating a fairer and more transparent financial ecosystem.
+- The success of copy trading relies on effective risk management and intelligent investment decisions, which help all participants achieve their financial goals.
