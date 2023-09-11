@@ -22,14 +22,12 @@ Why do we need the role of a staker? This is because in our architecture, each s
 
 To add stake, the following details are required:
 
-- `wallet`: The wallet address of the staker.
-- `amount`: The amount of TONs to be staked.
-- `childRouter`: The address of the child router that you want to stake.
+- `context.value`: The amount of TONs to be staked.
+- `beneficiary`: The wallet address of the staker.
 
 ### Withdraw stake
 
 To withdraw stake, the following details are required:
 
-- `wallet`: The wallet address of the staker.
+- `receiver`: The wallet address of the receiver.
 - `amount`: The amount of TONs to be withdrawn.
-- `childRouter`: The address of the child router that you want to withdraw from.
