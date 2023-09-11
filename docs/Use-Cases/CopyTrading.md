@@ -11,11 +11,54 @@
 
 1. Trader Subscribes to Oracle Events: Traders initially choose to subscribe to one or more Oracle events that provide real-time market prices and information. The Oracle regularly sends these price signals to the trader's smart contract.
 
-2. Signal Provider Registration: Traders interested in becoming signal providers can register with Eventon. They need to provide relevant details and agree to adhere to Eventon's terms and conditions.
+- Trader receive price event signal:
+
+```
+receive(msg: EventSignal) {
+        let cxt: Context = context();
+        if(cxt.sender != self.messenger) {
+            throw(009); // Only messenger can send signal;
+        }
+        let payload: Cell = msg.payload;
+        let parser: Slice = payload.beginParse();
+        let price: Int = parser.loadInt(32); // The price sent by the oracle event
+
+        // Trader's trading logic code...
+
+}
+```
+
+2. Signal Provider Registration: Traders interested in becoming signal providers can register with Eventon. They need to provide relevant details and agree to adhere to Eventon's terms and conditions. After trader registered, they will send trading signal to followers
+
+- Trader send their trading message to followers
+
+```
+send(SendParameters{
+    to: self.dex,
+    value: value,
+    mode: SendPayGasSeparately,
+    bounce: true,
+    body: Trade {
+        orderAction: self.orderAction,
+        assets: self.assets,
+        positionSize: self.positionSize
+    }.toCell()
+});
+```
 
 3. Subscriber Subscribes to Signals: Investors can browse different signal providers on the Eventon platform, reviewing their past performance and trading strategies. Once they select a signal provider, subscribers can easily subscribe to their trading signals.
 
 4. Trade Execution: When a signal provider executes buy or sell trades, the detailed information is transmitted to the Eventon system. Eventon verifies these trades and then sends the relevant information to all subscribers who have subscribed to that signal provider. This allows subscribers to replicate the signal provider's trades in real-time.
+
+- Subscriber receives trading message from subscriber
+
+```
+message Trade {
+    orderAction: Int;
+    assets: self.assets
+    positionSize: Int;
+}
+```
 
 ## Details
 
@@ -23,7 +66,7 @@
 
 The system employs a logic for detecting signal events initiated by signal providers. When a signal provider initiates a trade, the system captures the following information:
 
-- Trade Type: Indicates whether it's a buy or sell order.
+- Order Action: Indicates whether it's a buy or sell order.
 - Asset: Specifies the asset or instrument being traded.
 - Position Size: The margin used for opening the position.
 
