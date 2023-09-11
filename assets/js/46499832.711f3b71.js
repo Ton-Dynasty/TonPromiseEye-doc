@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkton_promise_eye_doc=self.webpackChunkton_promise_eye_doc||[]).push([[816],{8708:e=>{e.exports=JSON.parse('{"label":"hello","permalink":"/TonPromiseEye-doc/blog/tags/hello","allTagsPath":"/TonPromiseEye-doc/blog/tags","count":2}')}}]);

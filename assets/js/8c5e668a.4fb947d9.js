@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkton_promise_eye_doc=self.webpackChunkton_promise_eye_doc||[]).push([[225],{3643:e=>{e.exports=JSON.parse('{"label":"docusaurus","permalink":"/TonPromiseEye-doc/blog/tags/docusaurus","allTagsPath":"/TonPromiseEye-doc/blog/tags","count":4}')}}]);
