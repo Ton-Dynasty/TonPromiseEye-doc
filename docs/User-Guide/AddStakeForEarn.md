@@ -2,20 +2,20 @@
 sidebar_position: 4
 ---
 
-# Add stake for earn
+# Add Stake for Earn
 
-## What is add stake for earn
+## What Is Add Stake for Earn?
 
-在 eventon Protocol 上，每個訊號源都需要有一個 stake，而這個 stake 是由訊號源與任意使用者共同提供的，使用者可以透過 stake 來分享收益。
+On the Eventon Protocol, every signal source requires a stake, which is jointly provided by the signal source and any user. Users can use their stake to share in the earnings.
 
-## How much can I earn
+## How Much Can I Earn?
 
-eventon Protocol 會將所有的收益分配給所有的 stake，而每個 stake 的收益會依照 stake 的數量比例分配，舉例來說，如果使用者佔有總 stake 的 10% ，那麼使用者就可以獲得 10% 的收益。
+The Eventon Protocol distributes all earnings among all stakes, and the earnings for each stake are allocated in proportion to the quantity of stake. For example, if a user possesses 10% of the total stake, they will receive 10% of the earnings.
 
 ## Workflow
 
-eventon Protocol 的 add stake for earn 的工作流程如下圖所示：
+The workflow for "add stake for earn" on the Eventon Protocol is illustrated in the following diagram:
 
-![eventon add stake for earn Workflow](/img/eventon-add-stake-for-earn-workflow.png)
+![Eventon Add Stake for Earn Workflow](/img/eventon-add-stake-for-earn-workflow.png)
 
 ## How to add stake for earn
