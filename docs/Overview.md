@@ -18,6 +18,10 @@ Ton-Dynasty 設計了一個 protocol 來讓使用者訂閱鏈上合約所發生�
 
 舉例來說，使用者可以透過 TonPromiseEye 來訂閱一個 Oracle，並且設定當 Oracle 發出 ETH 的價格為 1600USD 時，TonPromiseEye 會自動幫使用者執行自訂的操作。
 
+## Add stake for earn
+
+任何使用者都可以 add stake for earn，只要在 TonPromiseEye 上 stake 一定數量的 TON，就可以獲得一定數量的 TON 獎勵。
+
 ## Workflow
 
 TonPromiseEye 的工作流程如下圖所示：

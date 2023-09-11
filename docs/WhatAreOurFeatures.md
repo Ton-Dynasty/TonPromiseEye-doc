@@ -9,7 +9,7 @@ sidebar_position: 2
 我們的目標是讓使用者可以透過 TonPromiseEye 來訂閱任意事件的訊號，並且在事件發生時自動執行使用者自訂的操作。
 所謂的訊號可以是鏈上的合約事件( Example: De-Fi protocol、Oracle 或是其他智能合約 )，也可以是鏈下的事件( 智能合約漏洞檢測 )。
 
-### 使用情境
+### Use cases
 
 1. 使用者可以訂閱一個 Address，並且設定當 Address 發出交易操作的訊號時，TonPromiseEye 會自動幫使用者執行跟單、反手等等。
 
