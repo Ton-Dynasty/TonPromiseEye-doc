@@ -69,7 +69,3 @@ Withdrawals can be made from the profit pool. The required information is:
 
 - `amount`: The sum of accumulated subscription earnings to be withdrawn.
 - `receiver`: The intended recipient of the earnings.
-
-```
-
-```
