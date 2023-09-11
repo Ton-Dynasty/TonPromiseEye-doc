@@ -64,12 +64,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'https://avatars.githubusercontent.com/u/144251015?s=400&u=34dba0b87d503a3307cb47a45ac378bee36a22f2&v=4',
+      image: 'img/logo.svg',
       navbar: {
         title: 'TonPromiseEye',
         logo: {
           alt: 'TonPromiseEye',
-          src: 'https://avatars.githubusercontent.com/u/144251015?s=400&u=34dba0b87d503a3307cb47a45ac378bee36a22f2&v=4',
+          src: 'img/logo.svg',
         },
         items: [
           {
