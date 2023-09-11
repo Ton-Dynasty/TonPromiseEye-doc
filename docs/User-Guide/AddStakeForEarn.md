@@ -14,4 +14,8 @@ eventon Protocol 會將所有的收益分配給所有的 stake，而每個 stake
 
 ## Workflow
 
+eventon Protocol 的 add stake for earn 的工作流程如下圖所示：
+
+![eventon add stake for earn Workflow](/img/eventon-add-stake-for-earn-workflow.svg)
+
 ## How to add stake for earn
