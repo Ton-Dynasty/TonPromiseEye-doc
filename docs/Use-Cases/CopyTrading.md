@@ -17,6 +17,8 @@
 
 4. Trade Execution: When a signal provider executes buy or sell trades, the detailed information is transmitted to the Eventon system. Eventon verifies these trades and then sends the relevant information to all subscribers who have subscribed to that signal provider. This allows subscribers to replicate the signal provider's trades in real-time.
 
+## Details
+
 ## Conclusion
 
 - Eventon's copy trading provides an effective way for traders and investors to share and benefit from trading strategies.
