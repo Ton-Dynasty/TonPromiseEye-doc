@@ -1,4 +1,4 @@
-# Copy Trading
+# VulnerableContractAlert
 
 ## Introduction
 

@@ -29,7 +29,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Use Cases',
-      items: ['Use-Cases/CopyTrading', 'Use-Cases/Blacklist'],
+      items: ['Use-Cases/CopyTrading', 'Use-Cases/VulnerableContractAlert', 'Use-Cases/Blacklist'],
     }
   ],
 
