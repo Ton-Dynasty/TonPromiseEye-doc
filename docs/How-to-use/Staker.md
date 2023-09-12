@@ -2,49 +2,57 @@
 
 ## Introduction
 
-Any user can stake their TONs to earn rewards. The staking process is simple and straightforward. Users can stake any amount of TONs and withdraw them after the staking period ends.
+In the Eventon ecosystem, any user has the opportunity to become a Staker by staking their TON tokens to earn rewards. The process of staking is user-friendly and straightforward, allowing users to lock in their TON tokens for a defined period and subsequently withdraw them, along with any earned rewards, when the staking period concludes.
 
-As for how much you can earn, it depends on the proportion of your TONs to the total. For example, if your TONs make up 10% of the total TONs in this child router, you will be able to share 10% of the earnings.
+The rewards earned by a Staker are directly proportional to the amount of TON tokens they have staked in relation to the total staked in the corresponding child router. For example, if a Staker's TON tokens make up 10% of the total TON tokens staked in a particular child router, they will be entitled to receive 10% of the earnings generated from that router.
 
-> However, to ensure the revenue of the signal source, when creating a child router, the signal source will set the maximum stake amount for other users. Therefore, the total stake amount from all stakers combined will not exceed the maximum stake amount set by the signal source.
+It's important to note that to ensure the revenue of the signal source, when creating a child router, the signal source sets a maximum stake amount for other users. Consequently, the combined total stake amount contributed by all Stakers will not exceed the maximum stake amount defined by the signal source.
 
-## Why Staker?
+## The Role of a Staker
 
-Why do we need the role of a staker? This is because in our architecture, each signal source corresponds to a child router, and each child router requires TONs to operate. Therefore, each child router has its own stake. These stakes are jointly provided by the signal source and staker. The subscription fee revenue from users subscribing to this signal source will be shared between the staker and the signal source.
+You might be wondering why we need the role of a Staker in the Eventon ecosystem. The reason is that in our architecture, each signal source corresponds to a child router, and these child routers require a reserve of TON tokens to operate effectively. This reserve of tokens is provided through a combination of contributions from the signal source and Stakers. The subscription fee revenue generated from users subscribing to signals within this child router will be distributed proportionally between the Staker and the signal source.
 
 ## Workflow
 
-![Staker workflow](/img/eventon-add-stake-for-earn-workflow.png)
+To better understand the role and actions of a Staker, let's take a look at the Staker's workflow within the Eventon ecosystem.
+
+![Staker Workflow](/img/eventon-add-stake-for-earn-workflow.png)
 
 ## Functionality
 
-### Add stake
+### Adding Stake
 
-To add stake, the following details are required:
+Stakers have the ability to add stake to a child router. This action involves specifying the following details:
 
-- `beneficiary`: The address of the stake beneficiary
-- `value`: The amount of stake to be added
+- `beneficiary`: The address of the stake beneficiary, which is the account that will benefit from the staking rewards.
+- `value`: The amount of TON tokens to be added as stake.
+
+To add stake, Stakers can initiate a transaction with the child router using the following code snippet:
 
 ```typescript
-send(SendParameters{to: childRouterAddress,
-    value: value,
+send(SendParameters{
+    to: childRouterAddress, // Address of the child router
+    value: value, // Amount of TON tokens to stake
     mode: SendRemainingValue,
     bounce: false,
     body: AddStakeFor{
         beneficiary: Address; // Beneficiary address
     }.toCell(),
-}
+})
 ```
 
-### Withdraw stake
+### Withdrawing Stake
 
-To withdraw stake, the following details are required:
+Stakers also have the option to withdraw their staked tokens. This action involves specifying the following details:
 
-- `receiver`: The address of the stake receiver
-- `amount`: The amount of stake to be removed
+- `receiver`: The address of the receiver who will obtain the withdrawn stake.
+- `amount`: The amount of staked TON tokens to be removed.
+
+To withdraw stake, Stakers can initiate a transaction with the child router using the following code snippet:
 
 ```typescript
-send(SendParameters{to: childRouterAddress,
+send(SendParameters{
+    to: childRouterAddress, // Address of the child router
     value: 0,
     mode: SendRemainingValue,
     bounce: false,
@@ -52,5 +60,7 @@ send(SendParameters{to: childRouterAddress,
         receiver: Address; // Receiver address
         amount: uint128; // Amount to be removed
     }.toCell(),
-}
+})
 ```
+
+Stakers play a vital role in supporting the Eventon ecosystem by contributing their TON tokens to child routers, thereby enabling the signal source to provide valuable services. In return, Stakers have the opportunity to earn rewards based on their stake proportion and actively participate in the Eventon ecosystem.
