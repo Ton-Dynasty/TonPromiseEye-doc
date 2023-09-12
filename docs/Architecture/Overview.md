@@ -5,7 +5,7 @@ The architecture of Eventon is illustrated in the following diagram:
 
 ### Signal
 
-**Protocols** in Eventon's Protocol can send events through a `send signal` mechanism. These events are then routed through the [**Universal Router**](/docs/Architecture/UniversalRouter.md), which further sends them through the [**Child Router**](/docs/Architecture/ChildRouter.md) to the [**Messenger**](/docs/Architecture/Messenger.md). Finally, the **Messenger** forwards these events to **subscribers** who have subscribed to them.
+**Protocols** in Eventon's Protocol can send events through a `send signal` mechanism. These events are then routed through the [**Universal Router**](/docs/Architecture/UniversalRouter), which further sends them through the [**Child Router**](/docs/Architecture/ChildRouter) to the [**Messenger**](/docs/Architecture/Messenger). Finally, the **Messenger** forwards these events to **subscribers** who have subscribed to them.
 
 ### Money
 
