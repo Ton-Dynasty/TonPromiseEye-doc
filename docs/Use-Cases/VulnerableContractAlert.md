@@ -2,45 +2,69 @@
 
 ## Introduction
 
-- The VulnerableContractAlert system is designed to detect and alert users to potential vulnerabilities in smart contracts within blockchain networks.
-- Smart contracts are critical components of blockchain ecosystems, and identifying vulnerabilities is essential to prevent security breaches and financial losses.
+The Vulnerable Contract Alert system is a critical component designed to detect and promptly alert users to potential vulnerabilities in smart contracts within blockchain networks. Smart contracts are the backbone of blockchain ecosystems, making it essential to proactively identify vulnerabilities to prevent security breaches and financial losses.
 
 ## Workflow
 
 ![Smart Contract Monitoring Workflow](./img/smartbugs.png)
 
-1. Contract Monitoring: The system continuously monitors smart contracts deployed on blockchain networks. It scans contract code and transactions for potential vulnerabilities and suspicious behavior.
+Let's delve into the intricacies of the Vulnerable Contract Alert system:
 
-2. Vulnerability Detection: Using a combination of automated code analysis and pattern recognition, the system identifies vulnerabilities such as reentrancy bugs, integer overflow, and other common smart contract vulnerabilities.
+1. **Contract Monitoring**:
 
-3. Alert Generation: When a potential vulnerability is detected, the system generates an alert. The alert includes details about the contract, the detected vulnerability, and its potential impact.
+   - The system continuously and diligently monitors smart contracts deployed on blockchain networks.
+   - It conducts thorough scans of contract code and scrutinizes transactions to identify potential vulnerabilities and suspicious activities.
 
-4. Alert Distribution: Alerts are distributed to relevant stakeholders, including contract owners, blockchain developers, and security experts. Timely notifications enable them to take necessary actions to address the vulnerability.
+2. **Vulnerability Detection**:
 
-- the alert message send to subscribers
+   - Leveraging a combination of automated code analysis and pattern recognition, the system excels in identifying vulnerabilities.
+   - Common smart contract vulnerabilities such as reentrancy bugs, integer overflows, and other critical issues are precisely pinpointed.
 
-```typescript
-message BugWarning {
-    targetAdress: Address; // The smart contract address that has a bug
-    bugInfo: Cell; // The bug information
-}
-```
+3. **Alert Generation**:
+
+   - Upon detecting a potential vulnerability, the system springs into action, generating a comprehensive alert.
+   - The alert includes vital information about the contract in question, details about the detected vulnerability, and an assessment of its potential impact.
+
+4. **Alert Distribution**:
+
+   - Alerts are swiftly distributed to relevant stakeholders who need to be informed about the vulnerability.
+   - Stakeholders may include contract owners, blockchain developers, and security experts.
+   - Timely notifications empower stakeholders to take necessary measures to address and rectify the identified vulnerability.
+
+   - An example of the alert message sent to subscribers:
+
+   ```typescript
+   message BugWarning {
+       targetAddress: Address; // The smart contract address with the detected vulnerability
+       bugInfo: Cell; // Comprehensive information about the identified vulnerability
+   }
+   ```
 
 ## Details
 
 ### Vulnerability Types
 
-The system is equipped to detect various types of vulnerabilities, primarily relying on the inspection tools provided by the signal provider. These tools can identify vulnerabilities in categories including but not limited to:
+The system is proficient in detecting a spectrum of vulnerability types. Its efficacy primarily stems from the inspection tools provided by the signal provider, which are capable of identifying vulnerabilities across various categories, including but not limited to:
 
-1. Reentrancy Vulnerabilities: These vulnerabilities occur when an external contract can call back into the vulnerable contract before the first call completes, potentially allowing malicious actors to manipulate the contract's state.
-2. Unchecked External Calls: Identifying situations where external calls to other contracts lack proper validation and checks, potentially leading to unauthorized access or funds loss.
-3. Time Manipulation Attacks: These vulnerabilities involve manipulating time-related functions in smart contracts, which can affect the outcome of contract executions and potentially lead to exploitation.
+1. **Reentrancy Vulnerabilities**:
+
+   - These vulnerabilities manifest when an external contract can invoke the vulnerable contract before the initial call completes.
+   - This situation can potentially enable malicious actors to manipulate the contract's state to their advantage.
+
+2. **Unchecked External Calls**:
+
+   - The system adeptly identifies scenarios where external calls to other contracts lack proper validation and checks.
+   - Such vulnerabilities can lead to unauthorized access or financial losses.
+
+3. **Time Manipulation Attacks**:
+   - This category of vulnerabilities involves the manipulation of time-related functions within smart contracts.
+   - Tampering with these functions can influence the outcome of contract executions, potentially leading to exploitation.
 
 ### Remediation Recommendations
 
-The system not only identifies vulnerabilities but also offers recommendations for remediation. This guidance helps stakeholders take appropriate actions to secure their smart contracts or wallets.
+The system's value extends beyond detection; it also provides invaluable guidance for remediation. These recommendations empower stakeholders to take informed and effective actions to secure their smart contracts and wallets.
 
 ## Conclusion
 
-- The VulnerableContractAlert system plays a crucial role in enhancing the security of blockchain ecosystems by proactively identifying and notifying stakeholders about potential vulnerabilities in smart contracts.
-- By offering timely alerts and remediation guidance, the system helps prevent security breaches and financial losses, ultimately contributing to the overall reliability and trustworthiness of blockchain networks.
+- The Vulnerable Contract Alert system stands as a sentinel, fortifying the security of blockchain ecosystems by proactively identifying and communicating potential vulnerabilities in smart contracts.
+- Through timely alerts and insightful remediation guidance, the system aids in averting security breaches and financial setbacks, thus contributing to the overall reliability and trustworthiness of blockchain networks.
