@@ -22,6 +22,11 @@ const sidebars = {
     'Overview',
     'WhatAreOurFeatures',
     {
+      type: 'category', 
+      label: 'How to use',
+      items: ['How-to-use/Protocol', 'How-to-use/Subscriber', 'How-to-use/Staker'],
+    },
+    {
       type: 'category',
       label: 'Architecture',
       items: ['Architecture/Overview'],
