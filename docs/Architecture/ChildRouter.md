@@ -1,6 +1,6 @@
 ## Overview
 
-As the intermediary between the [**Universal Router**](/docs/Architecture/UniversalRouter.md) and the [**Messenger**](/docs/Architecture/Messenger.md), the Child Router has the following functionalities:
+As the intermediary between the [**Universal Router**](/docs/Architecture/UniversalRouter) and the [**Messenger**](/docs/Architecture/Messenger), the Child Router has the following functionalities:
 
 ### Establishing a Messenger
 
