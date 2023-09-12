@@ -23,7 +23,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Architecture',
-      items: ['Architecture/Overview','Architecture/OnchainProtocol', 'Architecture/OffchainProtocol', 'Architecture/UniveralRouter','Architecture/ChildRouter','Architecture/messenger'],
+      items: ['Architecture/Overview','Architecture/UniveralRouter','Architecture/ChildRouter','Architecture/messenger'],
     },
     'WhatAreOurFeatures',
     {
