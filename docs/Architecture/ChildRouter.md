@@ -2,6 +2,8 @@
 
 The `ChildRouter` contract is a crucial component of the Eventon protocol, responsible for handling various functionalities related to protocol registration, stake management, and interaction with messenger contracts. This documentation provides an in-depth overview of the `ChildRouter` contract, including its key features, functions, and usage examples.
 
+As the intermediary between the [**Universal Router**](/docs/Architecture/UniversalRouter) and the [**Messenger**](/docs/Architecture/Messenger), the Child Router has the following functionalities:
+
 ## Introduction
 
 The `ChildRouter` contract serves as an intermediary between the Universal Router and Messenger contracts in the Eventon protocol. It offers a range of functionalities for protocols and users, allowing them to manage event subscriptions, stake TON coins, and interact with messenger contracts. Here are some key aspects of the `ChildRouter` contract:
@@ -44,29 +46,185 @@ init(owner: Address, sourceAddress: Address, minimumStake: Int) {
 
 ## Interactions
 
-The `ChildRouter` contract supports various interactions, each serving a specific purpose:
+### EventTrigger
 
-- **BuildChildRouter:** Allows the owner to build the `ChildRouter` and configure its parameters, including the maximum user stake amount and event ID.
+- **Purpose**: Sending an event trigger to notify subscribers of an event.
+- **Fields**:
+  - `value: Int`: The value associated with the event.
+  - `address: Address`: The address associated with the event.
+  - `info: EventSignal`: Additional information about the event.
 
-- **ProtcolRegisterSuccess:** Notifies the contract of a successful protocol registration.
+### BuildMessenger
 
-- **CreateBody:** Enables the creation of a User Default Callback (UDC) contract for users who do not write signal-receiving program logic.
+- **Purpose**: Building a messenger contract for event distribution.
+- **Fields**:
+  - `sourceAddress: Address`: The protocol's address.
+  - `eventId: Int`: The event ID to subscribe to.
+  - `maxUserStakeAmount: Int as coins`: Maximum stake per user.
+  - `subscribeFeePerTick: Int as coins`: Subscription fee per tick.
+  - `template: Cell`: Callback contract for subscribers.
+  - `sourceName: String`: Protocol's name.
 
-- **SubscribeBody:** Allows users to subscribe to specific events through the `ChildRouter`.
+### BuildChildRouter
 
-- **DeleteSubscriber:** Enables the removal of a subscriber from the associated messenger contract.
+- **Purpose**: Building a Child Router contract.
+- **Fields**:
+  - `sourceAddress: Address`: The protocol's address.
+  - `eventId: Int`: The event ID to subscribe to.
+  - `maxUserStakeAmount: Int as coins`: Maximum stake per user.
+  - `subscribeFeePerTick: Int as coins`: Subscription fee per tick.
+  - `template: Cell`: Callback contract for subscribers.
+  - `sourceName: String`: Protocol's name.
 
-- **DestroyMessenger:** Removes a messenger contract associated with a specific messenger ID.
+### CreateBody
 
-- **EventSignal:** Sends event signals to subscribed users via messenger contracts.
+- **Purpose**: Creating a callback contract for a user.
+- **Fields**:
+  - `walletAddress: Address`: Owner address of the callback contract.
+  - `deadline: Int`: Deadline for the message.
+  - `eventId: Int`: The event ID to subscribe to.
+  - `parameter: Cell`: Callback contract parameter.
 
-- **AddMessenger:** Allows the addition of messenger contracts for protocols.
+### SubscribeBody
 
-- **AddStakeFor:** Enables users or protocols to stake TON coins with the `ChildRouter`.
+- **Purpose**: Subscribing to an event using a callback contract.
+- **Fields**:
+  - `walletAddress: Address`: Owner address of the callback contract.
+  - `deadline: Int`: Deadline for the message.
+  - `eventId: Int`: The event ID to subscribe to.
+  - `callbackAddress: Address`: Callback contract address written by the user.
 
-- **RemoveStake:** Allows users to remove their stakes partially or completely.
+### ProtcolRegister
 
-- **CollectFee:** Handles the collection of fees, adding them to the total stake amount.
+- **Purpose**: Registering a protocol for event distribution.
+- **Fields**:
+  - `sourceAddress: Address`: Protocol's address.
+  - `template: Cell`: Callback contract for subscribers.
+  - `maxUserStakeAmount: Int as coins`: Maximum stake per user.
+  - `subscribeFeePerTick: Int as coins`: Subscription fee per tick.
+  - `sourceName: String`: Protocol's name.
+
+### ProtcolRegisterSuccess
+
+- **Purpose**: Notifying a successful protocol registration.
+- **Fields**:
+  - `sourceAddress: Address`: Protocol's address.
+  - `eventId: Int`: The event ID to subscribe to.
+  - `maxUserStakeAmount: Int as coins`: Maximum stake per user.
+  - `subscribeFeePerTick: Int as coins`: Subscription fee per tick.
+  - `template: Cell`: Callback contract for subscribers.
+  - `sourceName: String`: Protocol's name.
+
+### CreateMsgSubscriber
+
+- **Purpose**: Creating a message subscriber.
+- **Fields**:
+  - `walletAddress: Address`: Owner address of the callback contract.
+  - `callbackAddress: Address`: UDC address.
+  - `eventId: Int`: The event ID to subscribe to.
+
+### CreateMsgSubscriberSuccess
+
+- **Purpose**: Notifying a successful message subscriber creation.
+- **Fields**:
+  - `callbackAddress: Address`: Owner address of the callback contract.
+
+### CreateUdcSuccess
+
+- **Purpose**: Notifying a successful User Default Callback (UDC) contract creation.
+- **Fields**:
+  - `walletAddress: Address`: Owner address of the callback contract.
+  - `callbackAddress: Address`: UDC address.
+
+### DeleteSubscriber
+
+- **Purpose**: Deleting a subscriber from a messenger contract.
+- **Fields**:
+  - `walletAddress: Address`: Owner address of the callback contract.
+  - `callbackAddress: Address`: UDC address.
+  - `eventId: Int`: The event ID to subscribe to.
+
+### DestroyMessenger
+
+- **Purpose**: Destroying a messenger contract.
+- **Fields**:
+  - `messengerId: Int`: Messenger ID to destroy.
+
+### AddMessenger
+
+- **Purpose**: Adding a messenger contract for a protocol.
+- **Fields**:
+  - `protocolAddress: Address`: Protocol's address.
+
+### AddStakeFor
+
+- **Purpose**: Adding stake for a beneficiary.
+- **Fields**:
+  - `beneficiary: Address`: Beneficiary address.
+  - `amount: Int as coins`: Amount of stake to add.
+
+### RemoveStake
+
+- **Purpose**: Removing stake.
+- **Fields**:
+  - `receiver: Address`: Receiver address.
+  - `amount: Int as coins`: Amount of stake to remove.
+
+### CollectFee
+
+- **Purpose**: Collecting fees from subscribers.
+- **Fields**:
+  - `messengerId: Int
+
+`: Messenger ID.
+
+- `fee: Int as coins`: Amount of fee to collect.
+
+### BuildUDC
+
+- **Purpose**: Building a User Default Callback (UDC) contract.
+- **Fields**:
+  - `owner: Address`: Owner address of the UDC.
+
+### ExtMessage
+
+- **Purpose**: Sending an extended message with various parameters.
+- **Fields**:
+  - `seqno: Int as uint32`: Sequence number of the event.
+  - `valid_until: Int as uint32`: Deadline of the message.
+  - `signature: Slice as bytes64`: Signature of the message.
+  - `message_parameters: SendParameters`: Message payload.
+
+### OffchainEventSignal
+
+- **Purpose**: Sending an off-chain event signal.
+- **Fields**:
+  - `eventId: Int`: Protocol-defined event identifier.
+  - `payload: Cell`: Optional information for subscribers.
+
+### Staked
+
+- **Purpose**: Notifying a stake action.
+- **Fields**:
+  - `amount: Int as coins`: Amount of stake.
+  - `staker: Address`: Address of the staker.
+  - `beneficiary: Address`: Beneficiary address.
+
+### Withdrawn
+
+- **Purpose**: Notifying a stake withdrawal.
+- **Fields**:
+  - `amount: Int as coins`: Amount of withdrawn stake.
+  - `receiver: Address`: Receiver address.
+
+### ClaimReward
+
+- **Purpose**: Notifying a reward claim.
+- **Fields**:
+  - `amount: Int as coins`: Amount of claimed reward.
+  - `receiver: Address`: Receiver address.
+
+These interactions cover various aspects of the Eventon protocol, including event registration, stake management, subscription, and messaging between different contract components. You can use these interactions to build and interact with the Eventon ecosystem effectively.
 
 ## State Variables and Functions
 
