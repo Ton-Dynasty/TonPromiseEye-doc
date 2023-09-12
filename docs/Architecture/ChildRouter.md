@@ -14,7 +14,11 @@ Protocols and the general public can stake TON coins with the Child Router to en
 
 ### User Subscription
 
-Users can subscribe to their favorite events when they have either written their callback contract or are using the default callback contract provided by the Protocol.
+When the Child Router receives a user's subscription message, it sends a `subscribe message` to the Messenger to ensure that the Messenger can send messages to the subscriber.
+
+### User Unsubscription
+
+When the Child Router receives a user's unsubscription message, it sends a `unsubscribe message` to the Messenger to ensure that the Messenger stops sending messages to the subscriber.
 
 ### Creating User Default Callback Contracts
 
