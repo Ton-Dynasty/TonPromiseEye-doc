@@ -30,9 +30,4 @@ Our goal is to enable users to subscribe to signals for any event through Evento
 
 4. Eventon has broad support, accommodating both on-chain contract events and off-chain events. All that's required to integrate an event into Eventon is adding a message-sending function to the existing code and providing the signal's ABI, with no need to alter the existing architecture.
 
-## Our Architecture
-
-The architecture of Eventon is illustrated in the following diagram:
-![Alt text](/img/architecture_image.png)
-
 <!-- ![eventon Architecture](/img/eventon-architecture.png) -->
