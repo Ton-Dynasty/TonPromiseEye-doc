@@ -6,19 +6,21 @@ sidebar_position: 1
 
 Let's discover **eventon in 5 minutes**.
 
+![Alt text](/img/abtractflow.png)
+
 ## What is eventon?
 
 - **Ton-Dynasty** has designed a protocol that can achieve the following two functionalities:
-    - **On-Chain Functionality**: Users can subscribe to events occurring on-chain, including:
-        - DeFi protocols
-        - Oracles
-        - Airdrop events
-        - Other smart contracts
-    - **Off-Chain Functionality**: Through off-chain computations, signals are transmitted to on-chain contracts to execute related programs, including:
-        - Smart contract vulnerability detection
-        - Machine learning-based intelligent position signals
-        - Blacklist monitoring
-        - Whale account transfer notifications
+  - **On-Chain Functionality**: Users can subscribe to events occurring on-chain, including:
+    - DeFi protocols
+    - Oracles
+    - Airdrop events
+    - Other smart contracts
+  - **Off-Chain Functionality**: Through off-chain computations, signals are transmitted to on-chain contracts to execute related programs, including:
+    - Smart contract vulnerability detection
+    - Machine learning-based intelligent position signals
+    - Blacklist monitoring
+    - Whale account transfer notifications
 
 **Users can customize their own code or utilize built-in smart contracts to automatically execute program operations when specific signals are received.**
 
