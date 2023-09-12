@@ -44,7 +44,7 @@ init(owner: Address, sourceAddress: Address, minimumStake: Int) {
 }
 ```
 
-## Interactions
+## Message Types
 
 ### EventTrigger
 
@@ -223,8 +223,6 @@ init(owner: Address, sourceAddress: Address, minimumStake: Int) {
 - **Fields**:
   - `amount: Int as coins`: Amount of claimed reward.
   - `receiver: Address`: Receiver address.
-
-These interactions cover various aspects of the Eventon protocol, including event registration, stake management, subscription, and messaging between different contract components. You can use these interactions to build and interact with the Eventon ecosystem effectively.
 
 ## State Variables and Functions
 
