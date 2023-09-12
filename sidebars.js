@@ -20,16 +20,16 @@ const sidebars = {
 
   tutorialSidebar: [
     'Overview',
+    {
+      type: 'category',
+      label: 'Architecture',
+      items: ['Architecture/Overview','Architecture/OnchainProtocol', 'Architecture/OffchainProtocol', 'Architecture/UniveralRouter','Architecture/ChildRouter','Architecture/messenger'],
+    },
     'WhatAreOurFeatures',
     {
       type: 'category', 
       label: 'How to use',
       items: ['How-to-use/Protocol', 'How-to-use/Subscriber', 'How-to-use/Staker'],
-    },
-    {
-      type: 'category',
-      label: 'Architecture',
-      items: ['Architecture/Overview'],
     },
     {
       type: 'category',
