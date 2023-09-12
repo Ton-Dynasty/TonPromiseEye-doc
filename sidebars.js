@@ -23,6 +23,11 @@ const sidebars = {
     'WhatAreOurFeatures',
     {
       type: 'category',
+      label: 'Architecture',
+      items: ['Architecture/Overview'],
+    },
+    {
+      type: 'category',
       label: 'User Guide',
       items: ['User-Guide/HowToUse', 'User-Guide/AddStakeForEarn'],
     },

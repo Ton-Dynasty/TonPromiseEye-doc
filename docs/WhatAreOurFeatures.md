@@ -32,6 +32,7 @@ Our goal is to enable users to subscribe to signals for any event through Evento
 
 ## Our Architecture
 
-eventon 的架構如下圖所示：
+The architecture of Eventon is illustrated in the following diagram:
+![Alt text](/img/architecture_image.png)
 
 <!-- ![eventon Architecture](/img/eventon-architecture.png) -->
