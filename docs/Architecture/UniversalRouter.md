@@ -6,17 +6,13 @@ Universal Router offers the following functionalities for use by Protocols and u
 
 Protocols need only inherit from Alterable to register with Eventon, enabling user subscriptions to this event.
 
-### Protocol Staking and Public Staking
-
-In addition to providing basic signal sources, Protocols need to stake on the Child Router to ensure successful message delivery to subscribers.
-
 ### User Create Default Callback Contract
 
 For users who do not write signal-receiving program logic, they can create one using the templates provided by the Protocol.
 
 ### User Subscription
 
-Users can subscribe to their favorite events when they have either written their callback contract or are using the default callback contract provided by the Protocol.
+Users can subscribe to their favorite events when they have either written their callback contract or are using the default callback contract provided by the Protocol. After sending User Subscription message to Universal Router,its subscription sigal will send to [Child Router](/docs/Architecture/ChildRouter#user-subscription).
 
 ### User Unsubscription
 

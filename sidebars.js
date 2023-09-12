@@ -23,7 +23,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Architecture',
-      items: ['Architecture/Overview','Architecture/UniveralRouter','Architecture/ChildRouter','Architecture/Messenger'],
+      items: ['Architecture/Overview','Architecture/UniversalRouter','Architecture/ChildRouter','Architecture/Messenger'],
     },
     'WhatAreOurFeatures',
     {
