@@ -53,6 +53,57 @@ The UniversalRouter continues to support a plethora of interactions for efficien
 
 - **Add Messenger:** Protocols can extend their reach by adding a new messenger to the child router, enhancing the distribution of signals.
 
+## Message Types
+
+### ProtcolRegister
+
+- **Purpose:** Used by a protocol wishing to register itself with the UniversalRouter.
+- **Fields:**
+  - `sourceAddress`: Protocol's address.
+  - `template`: Callback contract for subscribers.
+  - `maxUserStakeAmount`: Maximum amount of stake that a user can stake for the protocol.
+  - `subscribeFeePerTick`: Amount of fee that a subscriber has to pay for each tick.
+  - `sourceName`: Protocol's name.
+
+### CreateBody
+
+- **Purpose:** Sent by users to generate a default callback contract.
+- **Fields:**
+  - `walletAddress`: Owner address of callback contract.
+  - `deadline`: The deadline of the msg can delay.
+  - `eventId`: The event id which user wants to subscribe.
+  - `parameter`: Callback contract parameter.
+
+### SubscribeBody
+
+- **Purpose:** Used by subscribers to subscribe to events from a specific protocol.
+- **Fields:**
+  - `walletAddress`: Owner address of callback contract.
+  - `deadline`: The deadline of the msg can delay.
+  - `eventId`: The event id which user wants to subscribe.
+  - `callbackAddress`: The callback contract address written by the user.
+
+### DeleteSubscriber
+
+- **Purpose:** Allows users to unsubscribe from a protocol's events.
+- **Fields:**
+  - `walletAddress`: Owner address of callback contract.
+  - `eventId`: The event id which user wants to unsubscribe from.
+  - `callbackAddress`: The callback contract address written by the user.
+
+### EventSignal
+
+- **Purpose:** Sent by protocols to dispatch event signals to all its subscribers.
+- **Fields:**
+  - `eventId`: Eventon-defined event identifier.
+  - `payload`: Optional information sent to the subscriber.
+
+### AddMessenger
+
+- **Purpose:** Used by protocols to add a new messenger to their specific child router.
+- **Fields:**
+  - `protocolAddress`: Protocol's address.
+
 ## State Variables and Functions
 
 To enhance the flexibility and utility of the UniversalRouter, the contract incorporates a suite of state variables and helper functions:
