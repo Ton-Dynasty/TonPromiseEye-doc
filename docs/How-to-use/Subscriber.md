@@ -40,3 +40,14 @@ Once subscribers have their own Callback contract address, provide the following
 - `deadline`: The maximum delay that the callback contract can accept for processing event signals sent by the Protocol.
 - `eventId`: The subscribed Protocol signal event ID (0: Oracle signals, 1: Smart Contract Vulnerability Detection).
 - `callback` contract address: The contract address responsible for receiving event signals (Default callback contract address/ Custom callback contract address).
+
+### Mssage structure(for technical subscribers)
+
+Developers with the ability to write their own code can craft their program logic using the following `message` template. **Eventon** will then send the `EventSignal` to the developer's callback contract address.
+
+```typescript
+message EventSignal {
+    eventId: Int; // Protocol-defined event identifier to allow the callback contract to handle based on the ID.
+    payload: Cell; // Optional information that the message sender can choose to send to the subscriber who subcribes to the event.
+}
+```
