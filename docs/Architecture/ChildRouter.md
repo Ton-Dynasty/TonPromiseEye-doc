@@ -14,11 +14,11 @@ Protocols and the general public can stake TON coins with the Child Router to en
 
 ### User Subscription
 
-When the Child Router receives a user's subscription message, it sends a `subscribe message` to the Messenger to ensure that the Messenger can send messages to the subscriber.
+When the Child Router receives a user's subscription message, it sends a `subscribe message` to the [Messenger](/docs/Architecture/Messenger#introduction) to ensure that the Messenger can send messages to the subscriber.
 
 ### User Unsubscription
 
-When the Child Router receives a user's unsubscription message, it sends a `unsubscribe message` to the Messenger to ensure that the Messenger stops sending messages to the subscriber.
+When the Child Router receives a user's unsubscription message, it sends a `unsubscribe message` to the [Messenger](/docs/Architecture/Messenger#interactions) to ensure that the Messenger stops sending messages to the subscriber.
 
 ### Creating User Default Callback Contracts
 
