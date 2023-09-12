@@ -79,7 +79,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/Ton-Dynasty',
+            href: 'https://github.com/Ton-Dynasty/eventon',
             label: 'GitHub',
             position: 'right',
           },
@@ -111,7 +111,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/Ton-Dynasty',
+                href: 'https://github.com/Ton-Dynasty/eventon',
               },
             ],
           },
