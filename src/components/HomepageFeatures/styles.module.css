@@ -11,13 +11,13 @@
 }
 
 .featureImage {
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
   border-radius: 50%;
   margin-right: 2rem;
 }
 
 .textBlock {
-  text-align: justify; /* 文本两端对齐 */
-  text-align-last: left; /* 最后一行左对齐 */
+  text-align: justify; 
+  text-align-last: left; 
 }
