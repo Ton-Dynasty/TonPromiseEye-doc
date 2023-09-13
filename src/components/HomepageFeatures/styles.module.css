@@ -9,3 +9,15 @@
   height: 200px;
   width: 200px;
 }
+
+.featureImage {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.textBlock {
+  text-align: justify; /* 文本两端对齐 */
+  text-align-last: left; /* 最后一行左对齐 */
+}
