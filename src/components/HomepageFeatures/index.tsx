@@ -57,12 +57,12 @@ const FeatureList: FeatureItem[] = [
 function Feature({ title, Img, description, url }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <img src={Img} alt={title} className={styles.featureImg} />
-      </div>
       <div className="text--center padding-horiz--md">
         <h3><a href={url}>{title}</a></h3> {/* 将标题包装在链接中 */}
         <p>{description}</p>
+      </div>
+      <div className="text--center">
+        <img src={Img} alt={title} className={styles.featureImg} />
       </div>
     </div>
   );
