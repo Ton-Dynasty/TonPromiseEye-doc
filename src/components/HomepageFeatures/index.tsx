@@ -40,7 +40,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Vulnerable Contract Alert',
-    Img: './img/smartbugs.png',
+    Img: './img/smartbug.png',
     description: (
       <>
         <div className={styles.textBlock}>
