@@ -7,7 +7,7 @@
 
 ## Workflow
 
-![Smart Contract Monitoring Workflow](./img/smartbugs.png)
+![Smart Contract Monitoring Workflow](./img/smartbug.png)
 
 1. Contract Monitoring: The system continuously monitors smart contracts deployed on blockchain networks. It scans contract code and transactions for potential vulnerabilities and suspicious behavior.
 
