@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'eventon',
-  tagline: 'A flexible message hub for event on TON.',
+  tagline: 'A flexible message hub for event on TON',
   favicon: 'https://github.com/Ton-Dynasty/eventon-doc/blob/main/static/img/eventon.png?raw=true',
 
   // Set the production url of your site here
