@@ -55,9 +55,39 @@ send(SendParameters{
 ```typescript
 message Trade {
     orderAction: Int;
-    assets: self.assets
+    assets: Int; // 0: TON, 1: ETH, 2: BTC
     positionSize: Int;
 }
+```
+
+- Subscriber copy trading trader's order
+
+```typescript
+// Receiver ths trader order signal and send it to the DEX to copy trade
+    receive(msg: EventSignal) {
+        let cxt: Context = context();
+        if(cxt.sender != self.messenger) {
+            throw(1006); // Only messenger can send signal
+        }
+        let payload: Cell = msg.payload;
+        let parser: Slice = payload.beginParse();
+        let orderAction: Int = parser.loadInt(32); // Copy the trader order action
+        let assets: Int = parser.loadInt(32); // Copy the trader order action
+        let positionSize: Int = parser.loadInt(32); // Copy the trader position size
+
+        let value: Int = ton("0.1");
+        send(SendParameters{
+            to: self.dex,
+            value: value,
+            mode: SendPayGasSeparately,
+            bounce: true,
+            body: Trade {
+                orderAction: orderAction, // Copy the trader order action
+                assets: assets, // The assets trader order
+                positionSize: self.positionSize // Replace to the position size of the follower
+            }.toCell()
+        });
+    }
 ```
 
 ## Details
