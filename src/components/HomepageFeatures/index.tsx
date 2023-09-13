@@ -14,7 +14,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Blacklist',
-    Img: '/img/blacklist.png',
+    Img: './img/blacklist.png',
     description: (
       <>
         <div className={styles.textBlock}>
@@ -22,11 +22,11 @@ const FeatureList: FeatureItem[] = [
         </div>
       </>
     ),
-    url: '/docs/Use-Cases/Blacklist',
+    url: '/eventon-doc/docs/Use-Cases/Blacklist',
   },
   {
     title: 'Copy Trading',
-    Img: '/img/copytrading.png',
+    Img: './img/copytrading.png',
     description: (
       <>
         <div className={styles.textBlock}>
@@ -36,11 +36,11 @@ const FeatureList: FeatureItem[] = [
         </div>
       </>
     ),
-    url: '/docs/Use-Cases/CopyTrading',
+    url: '/eventon-doc/docs/Use-Cases/CopyTrading',
   },
   {
     title: 'Vulnerable Contract Alert',
-    Img: '/img/smartbugs.png',
+    Img: './img/smartbugs.png',
     description: (
       <>
         <div className={styles.textBlock}>
@@ -50,7 +50,7 @@ const FeatureList: FeatureItem[] = [
         </div>
       </>
     ),
-    url: '/docs/Use-Cases/VulnerableContractAlert',
+    url: '/eventon-doc/docs/Use-Cases/VulnerableContractAlert',
   },
 ];
 
