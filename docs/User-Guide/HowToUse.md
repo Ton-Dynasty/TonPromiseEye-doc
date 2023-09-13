@@ -16,27 +16,27 @@ Users can create a UserCallBack contract by using our [website](https://eventon.
 
 1. Users should connect their wallet to our website.
 
-   ![Connect wallet](/img/logo.svg)
+   ![Connect wallet](/img/comingsoon.jpeg)
 
 2. Users should fill the parameters. **(Optional)**
 
-   ![Fill UserCallBack](/img/logo.svg)
+   ![Fill UserCallBack](/img/comingsoon.jpeg)
 
 3. Users should click the `Create UserCallBack` button.
 
-   ![Create UserCallBack](/img/logo.svg)
+   ![Create UserCallBack](/img/comingsoon.jpeg)
 
 4. Users should confirm the transaction.
 
-   ![Confirm transaction](/img/logo.svg)
+   ![Confirm transaction](/img/comingsoon.jpeg)
 
 5. Users should wait for the transaction to be confirmed.
 
-   ![Wait for confirmation](/img/logo.svg)
+   ![Wait for confirmation](/img/comingsoon.jpeg)
 
 6. Website will show your all UserCallBack address.
 
-   ![UserCallBack address](/img/logo.svg)
+   ![UserCallBack address](/img/comingsoon.jpeg)
 
 ### 3. Subscribe a signal
 
@@ -44,23 +44,23 @@ After creating a UserCallBack contract, users can subscribe a signal by using ou
 
 1. Users can choose a signal source.
 
-   ![Choose signal source](/img/logo.svg)
+   ![Choose signal source](/img/comingsoon.jpeg)
 
 2. Fill the parameters. **(Optional)**
 
-   ![Fill parameters](/img/logo.svg)
+   ![Fill parameters](/img/comingsoon.jpeg)
 
 3. Click the `Subscribe` button.
 
-   ![Click Subscribe button](/img/logo.svg)
+   ![Click Subscribe button](/img/comingsoon.jpeg)
 
 4. Confirm the transaction.
 
-   ![Confirm transaction](/img/logo.svg)
+   ![Confirm transaction](/img/comingsoon.jpeg)
 
 5. Wait for the transaction to be confirmed.
 
-   ![Wait for confirmation](/img/logo.svg)
+   ![Wait for confirmation](/img/comingsoon.jpeg)
 
 ## **For advanced usage**
 
@@ -74,11 +74,11 @@ Users can create a wallet by using Tonkeeper or other wallet software. And then,
 
 1. Users should write their own UserCallBack contract.
 
-   ![Write UserCallBack](/img/logo.svg)
+   ![Write UserCallBack](/img/comingsoon.jpeg)
 
 2. Users should deploy their UserCallBack contract.
 
-   ![Deploy UserCallBack](/img/logo.svg)
+   ![Deploy UserCallBack](/img/comingsoon.jpeg)
 
 ### 3. Subscribe a signal
 
@@ -86,20 +86,20 @@ After deploying a UserCallBack contract, users can subscribe a signal by using o
 
 1. Users can choose a signal source.
 
-   ![Choose signal source](/img/logo.svg)
+   ![Choose signal source](/img/comingsoon.jpeg)
 
 2. Fill the parameters. **(Optional)**
 
-   ![Fill parameters](/img/logo.svg)
+   ![Fill parameters](/img/comingsoon.jpeg)
 
 3. Click the `Subscribe` button.
 
-   ![Click Subscribe button](/img/logo.svg)
+   ![Click Subscribe button](/img/comingsoon.jpeg)
 
 4. Confirm the transaction.
 
-   ![Confirm transaction](/img/logo.svg)
+   ![Confirm transaction](/img/comingsoon.jpeg)
 
 5. Wait for the transaction to be confirmed.
 
-   ![Wait for confirmation](/img/logo.svg)
+   ![Wait for confirmation](/img/comingsoon.jpeg)
